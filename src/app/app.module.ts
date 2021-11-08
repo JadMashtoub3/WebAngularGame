@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { VillainComponent } from './components/villain/villain.component';
 import { GameComponent } from './components/game/game.component';
-import { TurnComponent } from './components/turn/turn.component';
 import { ResultComponent } from './components/result/result.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { ResultComponent } from './components/result/result.component';
     HeroComponent,
     VillainComponent,
     GameComponent,
-    TurnComponent,
     ResultComponent
   ],
   imports: [

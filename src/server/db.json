@@ -1,0 +1,76 @@
+/*
+{
+  "hero": [
+    {
+      "heroID": 1,
+      "name": "Captain Swinburne",
+      "minDice": 1,
+      "maxDice": 6,
+      "uses": 2
+    },
+    {
+      "heroID": 2,
+      "name": "Superman",
+      "minDice": 10,
+      "maxDice": 20,
+      "uses": 5
+    },
+    {
+      "heroID": 3,
+      "name": "Captain Swinburne2",
+      "minDice": 1,
+      "maxDice": 6,
+      "uses": 2
+    },
+    {
+      "heroID": 5,
+      "name": "heroman",
+      "minDice": 1,
+      "maxDice": 6,
+      "uses": 2
+    },
+    {
+      "heroID": 4,
+      "name": "testguy",
+      "minDice": 1,
+      "maxDice": 6,
+      "uses": 2
+    }
+  ],
+  "villain": [
+    {
+      "villainID": 1,
+      "name": "Russell Sprout"
+    },
+    {
+      "villainID": 2,
+      "name": "Due date Jenny"
+    },
+    {
+      "villainID": 3,
+      "name": "Taxation Tony"
+    }
+  ],
+  "game": [
+    {
+      "date": "05/11/2021",
+      "winner": "Heroes Winner"
+    },
+    {
+      "date": "06/11/2021",
+      "winner": "Villains Winner"
+    },
+    {
+      "date": "08/11/2021",
+      "winner": "Villains Winner"
+    },
+    {
+      "date": "09/11/2021",
+      "winner": "Villains Winner"
+    }
+  ],
+  "profile": {
+    "name": "JadMashtoub"
+  }
+}
+*/

@@ -1,18 +1,17 @@
 export class Hero {
   heroID: number;
   name: string;
-  MinHit: number;
-  MaxHit: number;
+  minDice: number;
+  maxDice: number;
   uses: number;
   chosen: boolean;
 
-  constructor(_heroID: number, _name: string, _MinHit: number,  _MaxHit: number, _uses: number) {
+  constructor(_heroID: number, _name: string, _minDice: number,  _maxDice: number, _uses: number) {
     this.heroID = _heroID;
     this.name = _name;
-    this.MinHit = _MinHit;
-    this.MaxHit = _MaxHit;
+    this.minDice = _minDice;
+    this.maxDice = _maxDice;
     this.uses = _uses;
     this.chosen = false;
   }
-
 }

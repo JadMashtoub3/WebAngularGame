@@ -1,31 +1,23 @@
 <body>
-  <button type="button" id="start" [disabled]="clicked" (click)="loadGame(); clicked=true" >Start</button>
+  <button type="button" id="start" [disabled]="clicked" (click)="loadGame(); clicked=true" >Play</button>
   <br />
-  <h1> Select Hero:
-    {{ currentSelectedHeroIndex ?  heroList[(currentSelectedHeroIndex)].name : "" }} </h1>
 
+  <h1> Select Hero: </h1>
   <div class="interface" >
-    <app-hero *ngFor="let hero of heroList; let i = index" [id]="i" [hero]="hero" (click)="setSelectedHero($event)"></app-hero>
-  </div>
-  <hr />
+    <app-hero *ngFor="let hero of heroList; let i = index" [id]="i" [hero]="hero" (click)="setSelectedHero($event)"></app-hero></div>
+ 
 
 
-  <h1> Select Villain:
-    {{ currentSelectedVillainIndex ?  villainsList[(currentSelectedVillainIndex)].name : "" }}</h1>
+  <h1> Select Villain:</h1>
   <div class="interface">
-    <app-villain *ngFor="let villain of villainsList; let i = index" [id]="i" [villain]="villain" (click)="setSelectedVillain($event)"></app-villain>
-  </div>
-  <hr />
+    <app-villain *ngFor="let villain of villainsList; let i = index" [id]="i" [villain]="villain" (click)="setSelectedVillain($event)"></app-villain></div>
+
 
   <div>
     <p>{{ currentSelectedHeroIndex ?  heroList[(currentSelectedHeroIndex)].name : "" }} attacks {{ currentSelectedVillainIndex ?  villainsList[(currentSelectedVillainIndex)].name : "" }} </p>
-    <p id="result-disp">No attacks</p>
-  </div>
-
+    <p id="result-disp">No attacks</p></div>
   <button id="roll-btn" [disabled]="chosenHeroVillain" (click)="roll()">Roll</button>
 
-  <hr />
   <div id="results">
-    <app-result *ngFor="let result of resultsList;" [result]="result"></app-result>
-  </div>
+    <app-result *ngFor="let result of resultsList;" [result]="result"></app-result></div>
 </body>

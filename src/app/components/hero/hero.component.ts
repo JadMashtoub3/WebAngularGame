@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HeroGameService } from 'src/app/herogame.service';
+import { HeroGameService } from 'src/app/services/herogame.service';
 import { Hero } from 'src/app/models/hero';
 
 @Component({
