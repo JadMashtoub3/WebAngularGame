@@ -1,0 +1,53 @@
+body {
+  font-family: '';
+}
+
+.interface {
+  display: flex;
+}
+
+.interface :hover {
+  background-color: rgb(214, 211, 211);
+  opacity: 50%;
+}
+
+app-hero {
+  border: 5px solid;
+  padding: 2px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+
+app-villain {
+  border: 5px solid;
+  padding: 20px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+
+button {
+  font-family: '';
+}
+
+.selected {
+  opacity: 50%;
+  transform: scale(1.1);
+}
+
+
+.reset {
+  border: 1px solid;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 00%;
+}
+header {
+  text-align: right;
+  padding: 40px;
+}
