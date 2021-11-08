@@ -1,11 +1,11 @@
 export class Result {
 
   winner: string;
-  time: Date;
+  date: Date;
 
-  constructor(_winner: string, _attacks: string, _time: Date) {
+  constructor(_winner: string, _attacks: string, _date: Date) {
     this.winner = _winner;
-    this.time = _time;
+    this.date = _date;
   }
 
 }

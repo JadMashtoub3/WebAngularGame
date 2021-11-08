@@ -121,7 +121,7 @@ export class GameComponent implements OnInit {
     }
   }
   heroesWin(): void {
-    this.postGame = {winner: "Heroes win", time: this.currentDate }
+    this.postGame = {winner: "Heroes win", date: this.currentDate }
 
     this._api.postResults(this.postGame).subscribe(
       response => console.log("working", response)
@@ -129,8 +129,7 @@ export class GameComponent implements OnInit {
   }
 
   villainsWin(): void {
-    this.postGame = {winner: "Villains win", time: this.currentDate }
-
+    this.postGame = {winner: "Villains win", date: this.currentDate }
     this._api.postResults(this.postGame).subscribe(
       response => console.log("working", response)
     )

@@ -11,9 +11,9 @@ import { Game } from './models/game';
   providedIn: 'root'
 })
 export class HeroGameService {
-  private jsonURL = "https://my-json-server.typicode.com/JadMashtoub3/HeroGameJSONserver/"
+  private jsonURL = "http://localhost:3000/"
   constructor(private _http: HttpClient) { }
-  //retrieves from mock server
+  //retrieves from json server
 
   GetHeroes(): Observable<Hero[]> {
     const url = this.jsonURL + "heroes"
@@ -25,7 +25,6 @@ export class HeroGameService {
   }
     getResults(): Observable<Result[]> {
       const url = this.jsonURL + "game"
-
       return this._http.get<Result[]>(url);
     }
 
